@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <title>cryptoconverter</title>
+</head>
+<body class="bg-green-200" >
+    <div class="flex flex-col md:flex-row">
+        <form class="flex flex-col m-2 justify-center grow shrink" name="convert_form">
+            
+            <div class="flex flex-row gap-2" id="input_from">
+                <input class="flow grow shrink bg-yellow-100" type="text" placeholder="amount" required>
+                <select class="bg-yellow-100 text-zinc-500" name="dropdown_from" id="dropdown_from">
+                    <option value="Solana">Solana</option>
+                    <option value="BitCoin">Bitcoin</option>
+                    <option value="Ethereum">Ethereum</option>
+                </select>
+            </div>
+
+            <div class="flex flex-row gap-2 mt-2" id="input_from">
+                <input class="flex grow shrink bg-yellow-100" type="text" placeholder="amount" required>
+                <select class="bg-yellow-100 text-zinc-500" name="dropdown_to" id="dropdown_to">
+                    <option value="Solana">Solana</option>
+                    <option value="BitCoin">Bitcoin</option>
+                    <option value="Ethereum">Ethereum</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="flex justify-center grow shrink text-white mt-2 p-2 bg-blue-500 rounded hover:bg-blue-300">convert</button>
+        </form>
+
+        <p class="flex grow shrink min-w-[100px] min-h-[100px] m-2 bg-blue-300 text-purple-500 text-2xl p-2"> test</p>
+    </div>
+    
+</body>
+</html>

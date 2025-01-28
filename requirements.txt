@@ -1,0 +1,5 @@
+django
+django-stubs
+python-dotenv
+requests
+types-requests
